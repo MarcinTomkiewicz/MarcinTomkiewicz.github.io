@@ -385,7 +385,7 @@ a {
         height: max-content;
         align-self: center;
         justify-self: center;
-        /* margin-bottom: 20%; */
+        margin-bottom: 20%;
         text-shadow: 0 0 3px #F3D925, 0 0 5px #000000;
         letter-spacing: 10px;
       background: -webkit-radial-gradient(#F3D925, #D8BE41);
