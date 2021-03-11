@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Acme', sans-serif;
+}
+
+.wrapper {
+    background: repeating-radial-gradient(circle at 50% 50%, #E35A30, #EE1200 120px);
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.middle__circle {
+    grid-column-start: 1;
+    grid-column-end: 14;
+    grid-row-start: 1;
+    grid-row-end: 15;
+    background-color: black;
+    background-image: url(Marcin500.png);
+    height: 500px;
+    width: 500px;
+    border: black 1px solid;
+    border-radius: 100%;
+    align-self: center;
+    justify-self: center;
+    /* position: absolute; */
+    /* margin-top: 25%; */
+    /* margin-left:  50%; */
+    /* transform: translate3d(-50%, -50%, 0); */
+}
+
+.my__name {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    font-size: 60px;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 20%;
+    text-shadow: 0 0 3px #F3D925, 0 0 0.5px #000000;
+    letter-spacing: 10px;
+  background: -webkit-radial-gradient(#F3D925, #D8BE41);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.my__introduction {
+    grid-column-start: 4;
+    grid-column-end: 11;
+    grid-row-start: 12;
+    grid-row-end: 14;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    /* align-self: center; */
+    justify-self: center;
+    margin-bottom: 20%;
+    text-shadow: 0 0 3px #F3D925, 0 0 0.5px #000000;
+    letter-spacing: 10px;
+  background: -webkit-radial-gradient(#F3D925, #D8BE41);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.in__progress {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 13;
+    grid-row-end: 14;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    height: max-content;
+    align-self: center;
+    justify-self: center;
+    /* margin-bottom: 20%; */
+    text-shadow: 0 0 3px #F3D925, 0 0 5px #000000;
+    letter-spacing: 10px;
+  background: -webkit-radial-gradient(#F3D925, #D8BE41);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.burger__menu {
+    grid-column-start: 12;
+    grid-column-end: 14;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-left: 20%;
+    height: 10px;
+    width: 40px;
+    border-top: #F3D925 solid 5px;
+    border-bottom: #F3D925 solid 5px;
+}
+
+.burger__menu::after {
+    content: "";
+    border-top: #F3D925 solid 5px;
+    margin-top: 65%;
+    width: 40px;
+    display: block;
+    border-radius: 10px/0;
+}
+
+.burger__menu:hover {
+    width: 10px;
+    height: 40px;
+    border-left: #F3D925 solid 5px;
+    border-right: #F3D925 solid 5px;
+    border-top: unset;
+    border-bottom: unset;
+}
+
+.burger__menu:hover::after {
+    border-right: #F3D925 solid 5px;
+    /* margin-left: 20%; */
+    height: 40px;
+    display: block;
+    border-top: unset;
+    margin-top: unset;
+    width: 26px;
+}
+
+@media (max-width: 1890px) {
+    .my__name {
+        grid-column-start: 4;
+        grid-column-end: 11;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        font-size: 50px;
+        align-self: center;
+        justify-self: center;
+        margin-bottom: 20%;
+        text-shadow: 0 0 3px #F3D925, 0 0 0.5px #000000;
+        letter-spacing: 10px;
+      background: -webkit-radial-gradient(#F3D925, #D8BE41);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+    }
+    
+    .my__introduction {
+        grid-column-start: 4;
+        grid-column-end: 11;
+        grid-row-start: 12;
+        grid-row-end: 14;
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+        /* align-self: center; */
+        justify-self: center;
+        margin-bottom: 20%;
+        text-shadow: 0 0 3px #F3D925, 0 0 0.5px #000000;
+        letter-spacing: 10px;
+      background: -webkit-radial-gradient(#F3D925, #D8BE41);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+    }
+    
+    .in__progress {
+        grid-column-start: 5;
+        grid-column-end: 10;
+        grid-row-start: 13;
+        grid-row-end: 14;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        height: max-content;
+        align-self: center;
+        justify-self: center;
+        /* margin-bottom: 20%; */
+        text-shadow: 0 0 3px #F3D925, 0 0 5px #000000;
+        letter-spacing: 10px;
+      background: -webkit-radial-gradient(#F3D925, #D8BE41);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+    }
+}
+
+@media (max-width: 1550px) {
+    .my__name {
+        grid-column-start: 4;
+        grid-column-end: 11;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        font-size: 50px;
+        align-self: center;
+        justify-self: center;
+        margin-bottom: 30%;
+        text-shadow: 0 0 3px #F3D925, 0 0 0.5px #000000;
+        letter-spacing: 10px;
+      background: -webkit-radial-gradient(#F3D925, #D8BE41);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+    }
+}
+
+@media (max-width: 1180px) {
+    .my__name {
+        grid-column-start: 4;
+        grid-column-end: 11;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        font-size: 30px;
+        align-self: center;
+        justify-self: center;
+        margin-bottom: 25%;
+        text-shadow: 0 0 3px #F3D925, 0 0 0.5px #000000;
+        letter-spacing: 10px;
+      background: -webkit-radial-gradient(#F3D925, #D8BE41);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+    }
+    
+    .my__introduction {
+        grid-column-start: 4;
+        grid-column-end: 11;
+        grid-row-start: 12;
+        grid-row-end: 14;
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        /* align-self: center; */
+        justify-self: center;
+        /* margin-bottom: 20%; */
+        text-shadow: 0 0 3px #F3D925, 0 0 0.5px #000000;
+        letter-spacing: 10px;
+      background: -webkit-radial-gradient(#F3D925, #D8BE41);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+    }
+    
+    .in__progress {
+        grid-column-start: 5;
+        grid-column-end: 10;
+        grid-row-start: 13;
+        grid-row-end: 14;
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        height: max-content;
+        align-self: center;
+        justify-self: center;
+        /* margin-bottom: 20%; */
+        text-shadow: 0 0 3px #F3D925, 0 0 5px #000000;
+        letter-spacing: 10px;
+      background: -webkit-radial-gradient(#F3D925, #D8BE41);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+    }
+}
