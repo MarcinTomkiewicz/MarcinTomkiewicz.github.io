@@ -144,7 +144,6 @@ a {
     border-bottom: #F3D925 solid 5px;
     transition-delay: 0.5s;
     transition-duration: 0.8s;
-    cursor: pointer;
 }
 
 .burger__menu::after {
@@ -173,7 +172,6 @@ a {
     border-bottom: unset;
     transition-delay: 0.5s;
     transition-duration: 0.8s;
-    cursor: pointer;
 }
 
 .burger__pack:hover > .burger__menu::after {
@@ -258,7 +256,7 @@ a {
 .hidden__menu--element:hover {
     border-top: #F3D925 solid 2px;
     border-bottom: #F3D925 solid 2px;
-    transition-delay: 0.4s;
+    transition-delay: 0.1s;
     transition-duration: 0.8s;
 }
 
