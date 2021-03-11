@@ -44,10 +44,10 @@ body {
     margin-bottom: 20%;
     text-shadow: 0 0 3px #F3D925, 0 0 0.5px #000000;
     letter-spacing: 10px;
-  background: -webkit-radial-gradient(#F3D925, #D8BE41);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
+    background: -webkit-radial-gradient(#F3D925, #D8BE41);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
 .my__introduction {
@@ -83,22 +83,39 @@ body {
     /* margin-bottom: 20%; */
     text-shadow: 0 0 3px #F3D925, 0 0 5px #000000;
     letter-spacing: 10px;
-  background: -webkit-radial-gradient(#F3D925, #D8BE41);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
+     background: -webkit-radial-gradient(#F3D925, #D8BE41);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
-.burger__menu {
+.burger__pack {
     grid-column-start: 12;
     grid-column-end: 14;
     grid-row-start: 3;
-    grid-row-end: 4;
-    margin-left: 20%;
+    grid-row-end: 7;
+    align-self: baseline;
+    width: 80%;
+    height: 100%;
+    margin-top: -7%;
+    transition-delay: 0.5s;
+    transition-duration: 0.8s;
+    border-radius: 15%;
+    padding-top: 7%;
+}
+
+.burger__menu {
+    /* grid-column-start: 12;
+    grid-column-end: 14;
+    grid-row-start: 3;
+    grid-row-end: 4; */
+    margin-left: 40%;
     height: 10px;
     width: 40px;
     border-top: #F3D925 solid 5px;
     border-bottom: #F3D925 solid 5px;
+    transition-delay: 0.5s;
+    transition-duration: 0.8s;
 }
 
 .burger__menu::after {
@@ -108,18 +125,28 @@ body {
     width: 40px;
     display: block;
     border-radius: 10px/0;
+    transition-delay: 0.5s;
+    transition-duration: 0.8s;
 }
 
-.burger__menu:hover {
+.burger__pack:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition-delay: 0.5s;
+    transition-duration: 0.8s;
+}
+
+.burger__pack:hover > .burger__menu {
     width: 10px;
     height: 40px;
     border-left: #F3D925 solid 5px;
     border-right: #F3D925 solid 5px;
     border-top: unset;
     border-bottom: unset;
+    transition-delay: 0.5s;
+    transition-duration: 0.8s;
 }
 
-.burger__menu:hover::after {
+.burger__pack:hover > .burger__menu::after {
     border-right: #F3D925 solid 5px;
     /* margin-left: 20%; */
     height: 40px;
@@ -127,6 +154,75 @@ body {
     border-top: unset;
     margin-top: unset;
     width: 26px;
+    transition-delay: 0.5s;
+    transition-duration: 0.8s;
+}
+
+.hidden__menu {
+    grid-column-start: 12;
+    grid-column-end: 14;
+    grid-row-start: 4;
+    grid-row-end: 9;
+    font-size: 20px;
+    text-shadow: 0 0 1px #F3D925, 0 0 0px #D8BE41;
+    letter-spacing: 5px;
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    margin-top: -190%;
+    height: 80%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    width: min-content;
+    transition-delay: 0.1s;
+    transition-duration: 0.8s;
+}
+
+.hidden__menu--list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding-top: 10%;
+}
+
+.burger__pack:hover > .hidden__menu {
+    position: unset;
+    margin-top: -15%;
+    transition-delay: 0.3s;
+    transition-duration: 0.8s;
+}
+
+.hidden__menu:hover {
+    position: unset;
+    margin-top: -15%;
+    /* background-color: rgb(229, 73, 37); */
+}
+
+.hidden__menu:hover + .burger__menu {
+    width: 10px;
+    height: 40px;
+    border-left: #F3D925 solid 5px;
+    border-right: #F3D925 solid 5px;
+    border-top: unset;
+    border-bottom: unset;
+    transition-delay: 0.5s;
+    transition-duration: 0.8s;
+}
+
+.hidden__menu:hover + .burger__menu::after {
+    border-right: #F3D925 solid 5px;
+    /* margin-left: 20%; */
+    height: 40px;
+    display: block;
+    border-top: unset;
+    margin-top: unset;
+    width: 26px;
+    transition-delay: 0.5s;
+    transition-duration: 0.8s;
 }
 
 @media (max-width: 1890px) {
