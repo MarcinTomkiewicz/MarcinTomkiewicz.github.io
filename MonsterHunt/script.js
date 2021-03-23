@@ -89,10 +89,11 @@ const monsterNames = [
     { "name": "Giant", "pic": "giant.png" },
 ];
 
-let selectedMonster = monsterNames[Math.floor(Math.random() * monsterNames.length)];
+let selectedMonster;
+//  = monsterNames[Math.floor(Math.random() * monsterNames.length)];
 
-console.log(selectedMonster.pic);
-console.log(selectedMonster.name);
+// console.log(selectedMonster.pic);
+// console.log(selectedMonster.name);
 
 // const selectMonsterName = () => {
 //     selectedMonster = monsterNames[Math.floor(Math.random() * monsterNames.length)];
