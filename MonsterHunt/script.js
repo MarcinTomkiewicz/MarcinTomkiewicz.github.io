@@ -314,7 +314,7 @@ const countdownClock = () => {
         const currentTime = Date.parse(new Date());
         deadline = new Date(currentTime + timeInMinutes * 60 * 1000);
 
-        document.cookie = 'myClock=' + deadline + '; path=/; domain=.yourdomain.com';
+        document.cookie = 'myClock=' + deadline + '; path=/; domain=.github.io';
     }
 
     initializeClock(deadline);
