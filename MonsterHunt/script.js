@@ -104,6 +104,7 @@ console.log(selectedMonster.name);
 
 const generateMonster = (playerStats) => {
     if (playerStats.level == 1) {
+        selectedMonster = monsterNames[Math.floor(Math.random() * monsterNames.length)];
         monsterLevelStats = randomizeStats(1, 4),
             monsterStats = {
                 //Example monster's stats stored in object
@@ -116,6 +117,7 @@ const generateMonster = (playerStats) => {
         return;
     };
     if (playerStats.level == 2) {
+        selectedMonster = monsterNames[Math.floor(Math.random() * monsterNames.length)];
         monsterLevelStats = randomizeStats(1, 5),
             monsterStats = {
                 //Example monster's stats stored in object
@@ -128,6 +130,7 @@ const generateMonster = (playerStats) => {
         return;
     };
     if (playerStats.level == 3) {
+        selectedMonster = monsterNames[Math.floor(Math.random() * monsterNames.length)];
         monsterLevelStats = randomizeStats(1, 6),
             monsterStats = {
                 //Example monster's stats stored in object
@@ -139,6 +142,7 @@ const generateMonster = (playerStats) => {
             };
         return;
     };
+    selectedMonster = monsterNames[Math.floor(Math.random() * monsterNames.length)];
     monsterLevelStats = randomizeStats(playerStats.level - 2, playerStats.level + 3),
         monsterStats = {
             //Example monster's stats stored in object
