@@ -131,6 +131,10 @@ button:hover {
     margin-top: 15px;
 }
 
+.health__points {
+    margin-top: 15px;
+}
+
 .hp__bar {
     margin-top: 15px;
     width: 60%;
@@ -152,6 +156,10 @@ button:hover {
     border-radius: 10px;
     background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.experience {
+    margin-top: 15px;
 }
 
 .progress__bar {
