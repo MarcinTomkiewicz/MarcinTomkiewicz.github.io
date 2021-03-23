@@ -66,6 +66,7 @@ const monsterStatsReset = () => {
         power: "-",
         toughness: "-",
         name: "-",
+        pic: "-",
         hp: "-",
     }
 };
@@ -90,7 +91,7 @@ const monsterNames = [
 ];
 
 let selectedMonster;
-//  = monsterNames[Math.floor(Math.random() * monsterNames.length)];
+// = monsterNames[Math.floor(Math.random() * monsterNames.length)];
 
 // console.log(selectedMonster.pic);
 // console.log(selectedMonster.name);
@@ -314,7 +315,7 @@ const countdownClock = () => {
         const currentTime = Date.parse(new Date());
         deadline = new Date(currentTime + timeInMinutes * 60 * 1000);
 
-        document.cookie = 'myClock=' + deadline + '; path=/; domain=.github.io';
+        document.cookie = 'myClock=' + deadline + '; path=/; domain=.yourdomain.com';
     }
 
     initializeClock(deadline);
